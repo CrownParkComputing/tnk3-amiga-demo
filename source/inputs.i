@@ -1,4 +1,4 @@
-; CD32 / two-button pad on port 1.  Cache once per game tick so Start, the
+; CD32 / two-button pad on physical Amiga port2 (JOY1DAT/CIA bit7).  Cache once per game tick so Start, the
 ; cannon and machine gun see the same sample.  Native CD32 order is B,A,Y,X,R,L,Play.
 ReadPad:
         movem.l d0-d5,-(sp)

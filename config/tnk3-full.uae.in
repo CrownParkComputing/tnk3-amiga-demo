@@ -46,3 +46,5 @@ joyport1mode=cd32joy
 ; Keep controller input available when the game window loses focus.
 ; Value4 enables joystick input only; keyboard/mouse stay focus-dependent.
 amiberry.inactive_input=4
+
+input.autoswitch=false

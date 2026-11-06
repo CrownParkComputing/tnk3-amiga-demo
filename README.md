@@ -46,3 +46,7 @@ This remains a conversion in development; complete native AI, terrain
 destruction, original area music and the full ending remain incomplete.
 
 Original game, artwork and music: SNK. Amiga conversion: WHittyApps.
+
+Primary controller: physical Amiga port2. Port1 remains the mouse. In two-player
+alternating mode both players share the port2 controller. Automatic input
+switching is disabled in the supplied presets.
