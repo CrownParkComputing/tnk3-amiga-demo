@@ -1,0 +1,8 @@
+/build/
+__pycache__/
+*.py[cod]
+*.scores
+*.scores.*
+*.log
+/config/*.uae
+.uaefsdb

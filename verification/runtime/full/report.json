@@ -1,0 +1,123 @@
+{
+  "variant": "full",
+  "binary_sha256": "72407bf6b52373b6ca71ff37839dfc32ad91a27e6f67dfb02404498ea1bf9396",
+  "checks": [
+    {
+      "name": "Demo title is fully visible and labelled as a demo",
+      "passed": true,
+      "observed": {
+        "pixels": 71680
+      }
+    },
+    {
+      "name": "HD demo loads optional Ikari music without other game data",
+      "passed": true,
+      "observed": {}
+    },
+    {
+      "name": "Original opening attract runs in rebased demo coordinates",
+      "passed": true,
+      "observed": {
+        "camera_y": 18264
+      }
+    },
+    {
+      "name": "Controller Start begins at the retained carrier",
+      "passed": true,
+      "observed": {}
+    },
+    {
+      "name": "Cropped-map terrain renders at exact prepared RGB",
+      "passed": true,
+      "observed": {
+        "compared": 66496,
+        "equal": 66496
+      }
+    },
+    {
+      "name": "Normal pad movement and cannon work in the shortened map",
+      "passed": true,
+      "observed": {}
+    },
+    {
+      "name": "Large elapsed-time counters do not reveal later levels",
+      "passed": true,
+      "observed": {}
+    },
+    {
+      "name": "Reaching the physical route end shows Demo Complete at zero timer",
+      "passed": true,
+      "observed": {}
+    },
+    {
+      "name": "Finished demo returns through high scores to its own title",
+      "passed": true,
+      "observed": {}
+    }
+  ],
+  "world_height": 18512,
+  "route_end_progress": 18000,
+  "wave_count": 1042,
+  "limits": [
+    "Owned isolated Amiberry; only demo executable, music bank and startup script mounted.",
+    "Actual controller input. Explicit BSS counter/endpoint fixtures; no code, graphics or terrain patches."
+  ],
+  "sessions": [
+    {
+      "name": "demo",
+      "cpu_model": [
+        "model=68020",
+        "name=686802",
+        "fpu=0",
+        "24bit=true",
+        "compatible=true",
+        "cycle_exact=false"
+      ],
+      "initial_state": {
+        "PlayerX": 182,
+        "PlayerY": 18440,
+        "CamX": 0,
+        "CamY": 0,
+        "GameMode": 0,
+        "AttractFrameIndex": 0,
+        "AttractIdleTimer": 4,
+        "AttractCycles": 0,
+        "LogicClockLast": 33,
+        "LogicRemaining": 0,
+        "PeakDrawCount": 0,
+        "FrameCounter": 4,
+        "GameTicks": 4,
+        "ArcadeTicks": 4,
+        "AttractFramePtr": 0,
+        "NativeCacheHits": 0,
+        "NativeCacheMisses": 0,
+        "DroppedBOBs": 0,
+        "GameProgress": 0,
+        "Score": 0,
+        "Lives": 3,
+        "WaveIndex": 0,
+        "DeathTimer": 0,
+        "PlayerDamage": 0,
+        "Invincible": 0,
+        "UIPrevButtons": 0,
+        "SessionPlayers": 0,
+        "ActivePlayer": 0,
+        "EndReason": 0,
+        "MusicAltBase": 4209672,
+        "MusicAltBytes": 2442752,
+        "ShotsFired": 0,
+        "QuitRequested": 0,
+        "InputY": 0
+      },
+      "hunk_bases": {
+        "0": "0x21a5e0",
+        "1": "0x21f328",
+        "2": "0x9b20",
+        "3": "0x32d68",
+        "4": "0x2a52e0"
+      }
+    }
+  ],
+  "passed": 9,
+  "total": 9
+}

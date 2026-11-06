@@ -1,0 +1,9 @@
+TwoPlayerOption: ds.w 1
+SessionPlayers: ds.w 1
+ActivePlayer: ds.w 1
+PlayerScores: ds.l 2
+PlayerLives: ds.w 2
+PlayerFinished: ds.w 2
+TurnPending: ds.w 1
+TurnTimer: ds.w 1
+PlayerWorlds: ds.b 2*PLAYER_STATE_BYTES

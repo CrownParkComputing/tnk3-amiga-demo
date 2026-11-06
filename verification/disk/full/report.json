@@ -1,0 +1,38 @@
+{
+  "variant": "full",
+  "binary_sha256": "72407bf6b52373b6ca71ff37839dfc32ad91a27e6f67dfb02404498ea1bf9396",
+  "disk_sha256": "84b66ca087f4aab3501b491d90d3274188bcfdd81c88d26d468bec229cf19813",
+  "checks": [
+    {
+      "name": "Downloadable DD disk boots into the demo",
+      "passed": true,
+      "observed": {}
+    },
+    {
+      "name": "DD disk safely uses native music without an external bank",
+      "passed": true,
+      "observed": {}
+    },
+    {
+      "name": "Return starts the shortened disk game",
+      "passed": true,
+      "observed": {}
+    },
+    {
+      "name": "Normal movement and weapons cross the carrier onto retained land",
+      "passed": true,
+      "observed": {
+        "player_y": 18265,
+        "lives": 3
+      }
+    },
+    {
+      "name": "Escape leaves the disk game loop",
+      "passed": true,
+      "observed": {}
+    }
+  ],
+  "scope": "Actual downloadable demo ADF, normal keys, no HD mounted and no guest state/code patches.",
+  "passed": 5,
+  "total": 5
+}

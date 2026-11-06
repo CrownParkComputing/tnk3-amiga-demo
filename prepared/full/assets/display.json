@@ -1,0 +1,17 @@
+{
+  "edition": "demo",
+  "variant": "full",
+  "world_width": 512,
+  "world_height": 18512,
+  "view_width": 320,
+  "view_height": 224,
+  "planes": 8,
+  "exact_native_rgb": true,
+  "unique_rgb": 204,
+  "unique_tiles": 755,
+  "route_end_progress": 18000,
+  "map_bytes": 296192,
+  "map_packed_bytes": 112058,
+  "map_source": "prepared demo-only terrain",
+  "shadows": "Native shadow pen remains transparent as in the full renderer"
+}

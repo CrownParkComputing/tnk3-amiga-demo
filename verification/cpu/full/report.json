@@ -1,0 +1,62 @@
+{
+  "binary_sha256": "72407bf6b52373b6ca71ff37839dfc32ad91a27e6f67dfb02404498ea1bf9396",
+  "variant": "full",
+  "checks": [
+    {
+      "name": "Compiled decoder writes exactly the shortened map/collision data",
+      "passed": true,
+      "observed": {
+        "raw_bytes": 592384,
+        "physical_height": 18512
+      }
+    },
+    {
+      "name": "Opening attract camera is rebased inside the demo map",
+      "passed": true,
+      "observed": {
+        "camera_y": 18264
+      }
+    },
+    {
+      "name": "Player starts on the retained original carrier in demo coordinates",
+      "passed": true,
+      "observed": {}
+    },
+    {
+      "name": "Changing elapsed-time counters does not unlock or finish another route",
+      "passed": true,
+      "observed": {}
+    },
+    {
+      "name": "Player collision rejects positions beyond the physical demo map",
+      "passed": true,
+      "observed": {}
+    },
+    {
+      "name": "Camera clamps at the physical demo map edge",
+      "passed": true,
+      "observed": {}
+    },
+    {
+      "name": "Spatial endpoint completes the demo without a timer or later boss",
+      "passed": true,
+      "observed": {
+        "progress": 18000,
+        "game_ticks": 0
+      }
+    },
+    {
+      "name": "Completion is explicitly labelled DEMO COMPLETE",
+      "passed": true,
+      "observed": {}
+    },
+    {
+      "name": "Alternating Player2 also loads only demo geometry",
+      "passed": true,
+      "observed": {}
+    }
+  ],
+  "scope": "Actual compiled68020 routines and declared RAM fixtures; no code patches or routine stubs.",
+  "passed": 9,
+  "total": 9
+}

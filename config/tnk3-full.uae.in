@@ -1,0 +1,48 @@
+; TNK III full colour: 204 colours / 8 planes, accelerated A1200.
+; Amiberry multiplier 64 is 16 times stock 68020 multiplier 4 (~227MHz PAL).
+; Matches the current Bionic Commando full-colour timing approach.
+; Machine-local ROM and HD paths are resolved by run_amiberry.sh/build.py.
+config_description=TNK III FIVE-MINUTE DEMO - Full Colour 16x A1200
+config_hardware=true
+config_host=true
+use_gui=no
+kickstart_rom_file=YOUR_KICKSTART_ROM
+cpu_model=68020
+cpu_speed=real
+cpu_multiplier=64
+cpu_compatible=true
+cpu_24bit_addressing=true
+cpu_cycle_exact=false
+cpu_memory_cycle_exact=true
+cachesize=0
+immediate_blits=true
+blitter_cycle_exact=false
+chipset=aga
+chipset_compatible=A1200
+chipmem_size=4
+fastmem_size=8
+bogomem_size=0
+ntsc=false
+; Keep an empty DF0 present to avoid Kickstart's absent-drive boot delay.
+nr_floppies=1
+floppy0type=0
+floppy0=
+filesystem2=rw,DH0:TNKIII:YOUR_HD_FOLDER,0
+uaehf0=dir,rw,DH0:TNKIII:YOUR_HD_FOLDER,0
+sound_output=exact
+sound_channels=stereo
+sound_frequency=44100
+sound_interpol=anti
+gfx_width=960
+gfx_height=720
+gfx_width_windowed=960
+gfx_height_windowed=720
+gfx_fullscreen_amiga=false
+gfx_resolution=hires
+gfx_linemode=double
+joyport0=mouse
+joyport1=joy0
+joyport1mode=cd32joy
+; Keep controller input available when the game window loses focus.
+; Value4 enables joystick input only; keyboard/mouse stay focus-dependent.
+amiberry.inactive_input=4
